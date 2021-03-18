@@ -1,0 +1,15 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<ViewSettingsDialog
+		confirm='onSortConfirm'>
+		<sortItems>
+			<ViewSettingsItem text="Riferimento" key="XBLNR" selected="true" />
+			<ViewSettingsItem text="BPartner" key="GPART" />
+			<ViewSettingsItem text="Conto contr." key="VKONT" />
+			<ViewSettingsItem text="Data reg." key="BUDAT" />
+			<ViewSettingsItem text="Scad.netto" key="FAEDN" />
+			<ViewSettingsItem text="Data doc." key="BLDAT" />
+		</sortItems>
+	</ViewSettingsDialog>
+</core:FragmentDefinition>

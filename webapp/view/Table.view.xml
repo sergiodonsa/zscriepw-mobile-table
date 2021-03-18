@@ -1,0 +1,78 @@
+<mvc:View controllerName="zscriepwmobiletable.controller.Table" xmlns:mvc="sap.ui.core.mvc" xmlns:core='sap.ui.core' xmlns="sap.m" >
+    <Table id="idNotificationsTable" inset="false" mode="MultiSelect" selectionChange='onSelect' 
+        items="{ path: 'DATA>/NotificationCollection', sorter: { path: 'Name' } }"> 
+		<headerToolbar>
+			<OverflowToolbar>
+				<content>
+					<Title text="Stato conti" level="H2"/>
+					<ToolbarSpacer/>
+					<!--<SearchField id="searchField" search="onSearch" placeholder="Search by D" width="auto"></SearchField>
+					<ToggleButton id="scanBarcode" tooltip="Scan Equipment Barcode" icon="sap-icon://bar-code" press="onBarcodeScan"/>
+					
+					<Button tooltip="Filter" icon="sap-icon://filter" press="onFilter"/>-->
+					<Button tooltip="Group" icon="sap-icon://sort" press='onSort'/>
+			 <!--<Button icon="sap-icon://action-settings" press='onPersoButtonPressed'/>-->		
+				</content>
+			</OverflowToolbar>
+		</headerToolbar>
+		<columns>
+			<Column demandPopin="true" hAlign="Center">
+				<Text text="Riferimento"/>
+			</Column>
+			<Column hAlign="Center">
+				<Text text="BPartner"/>
+			</Column>
+			<Column demandPopin="true" hAlign="Center">
+				<Text text="Conto contr."/>
+			</Column>
+			<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center">
+				<Text text="Data reg."/>
+			</Column>
+			<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center">
+				<Text text="Scad.netto"/>
+			</Column>
+			<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center">
+				<Text text="Data doc."/>
+			</Column>
+
+			<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center">
+				<Text text="Importo"/>
+			</Column>
+			<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center">
+				<Text text="Divisa"/>
+			</Column>
+			<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center">
+				<Text text="Società"/>
+			</Column>
+			<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Center">
+				<Text text="Settore Contabile"/>
+			</Column>
+
+		</columns>
+	
+	<ColumnListItem>	
+		<cells>
+				<!--	title="{DATA>S_FKKOP-XBLNR}"-->
+				<!--<ObjectStatus text="{DATA>S_FKKOP-AMPEL}" state="{path : 'DATA>S_FKKOP-AMPEL', formatter : 'zscriepwmobiletable.Formatter.priority'}"/>-->
+	<!--				<ObjectIdentifier title="{DATA>P_IOUTTAB-ADAT}" />-->
+	<!--				<Text text="{ path: 'DATA>P_IOUTTAB-ZWSTAND_BI_DISP', type: 'sap.ui.model.type.Date', formatOptions : { pattern : 'MM/dd/yyyy', source : { pattern : 'dd.MM.yyyy' } } }"/>-->
+        				<!--ext text="{ path: 'DATA>S_FKKOP-BLDAT', type: 'sap.ui.model.type.Date', formatOptions : { pattern : 'MM/dd/yyyy', source : { pattern : 'MM/dd/yyyy' } } }"/>-->
+	<!--				<Text text="{ path: 'DATA>P_IOUTTAB-MASSREAD', type: 'sap.ui.model.type.Date', formatOptions : { pattern : 'MM/dd/yyyy', source : { pattern : 'dd.MM.yyyy' } } }"/>-->
+	<!--				<ObjectStatus icon= "{path:'DATA>P_IOUTTAB-AMPEL', formatter:'zscriepwmobiletable.Formatter.icon'}" state="{path : 'DATA>S_FKKOP-AMPEL', formatter : 'zscriepwmobiletable.Formatter.priority'}"/>-->
+	<!--				<Text text="{DATA>P_IOUTTAB-BETRW}"/>-->
+	<!--				<Input value="{DATA>P_IOUTTAB-AUGBW}" editable="true"/>	  -->
+	    				<Text text="{ path: 'DATA>XBLNR' }"/>
+	    				<Text text="{ path: 'DATA>GPART' }"/>
+	    				<Text text="{ path: 'DATA>VKONT' }"/>
+    					<Text text="{ path: 'DATA>BUDAT', type: 'sap.ui.model.type.Date', formatOptions : { pattern : 'MM/dd/yyyy', source : { pattern : 'dd.MM.yyyy' } }}" />
+	    				<Text text="{ path: 'DATA>FAEDN' }"/>
+    					<Text text="{ path: 'DATA>BLDAT', type: 'sap.ui.model.type.Date', formatOptions : { pattern : 'MM/dd/yyyy', source : { pattern : 'dd.MM.yyyy' } }}" />
+	    				<Text text="{ path: 'DATA>BETRW' }"/>
+	    				<Text text="{ path: 'DATA>WAERS' }"/>
+	    				<Text text="{ path: 'DATA>BUKRS' }"/>
+	    				<Text text="{ path: 'DATA>GSBER' }" />      
+                        
+		</cells>
+		</ColumnListItem>
+	</Table> 
+</mvc:View>

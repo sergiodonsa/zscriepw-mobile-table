@@ -1,0 +1,19 @@
+{
+  "name": "zriepw-mobile-table",
+  "version": "1.0.0",
+  "description": "== Local Preview Execute `npm start`",
+  "main": "webapp/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sap/approuter": "^9.4.0",
+    "@sap/html5-repo-mock": "^2.0.1",
+    "@ui5/cli": "^2.9.3",
+    "to": "^0.2.9",
+    "update": "^0.7.4"
+  }
+}

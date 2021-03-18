@@ -1,0 +1,49 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<ViewSettingsDialog confirm='onFilterConfirmed'>
+		<filterItems>
+			<ViewSettingsFilterItem text="Riferimento" items="{ path: 'DATAX>/NotificationCollection'}" key="XBLNR" multiSelect="true" >
+				<items>
+					<ViewSettingsItem text="{DATAX>XBLNR}" key="XBLNR"/>
+				<!--<ViewSettingsItem text="S2 - Service request" key="QMART___EQ___S2"/>
+					<ViewSettingsItem text="S3 - Activity report" key="QMART___EQ___S3"/>-->	
+				</items>
+			</ViewSettingsFilterItem>
+			<ViewSettingsFilterItem text="BPartner" key="GPART" multiSelect="true"  items="{ path: 'DATAX>/NotificationCollection'}">
+				<items>
+					<ViewSettingsItem text="{DATAX>GPART}" key="GPART"/>
+				<!--	<ViewSettingsItem text="2-High" key="S_FKKOP-AMPEL___EQ___2"/>
+					<ViewSettingsItem text="3-Medium" key="S_FKKOP-AMPEL___EQ___3"/>
+					<ViewSettingsItem text="4-Low" key="S_FKKOP-AMPEL___EQ___4"/>-->
+				</items>
+			</ViewSettingsFilterItem>
+			<ViewSettingsFilterItem text="Conto contr." key="VKONT" multiSelect="false"  items="{ path: 'DATAX>/NotificationCollection'}">
+				<items>
+					<ViewSettingsItem text="{DATAX>VKONT}" key="P_IOUTTAB-VKONT" />
+				<!--	<ViewSettingsItem text="Within a month" key="S_FKKOP-BUDAT___BT___TODAY___MONTH"/>
+					<ViewSettingsItem text="Older than a month" key="S_FKKOP-BUDAT___LT___MONTH"/>-->
+				</items>
+			</ViewSettingsFilterItem>
+			<ViewSettingsFilterItem text="Data reg." key="BUDAT" multiSelect="false" items="{ path: 'DATAX>/NotificationCollection'}">
+				<items>
+					<ViewSettingsItem text="{DATAX>BUDAT}" key="BUDAT"/>
+					<!--<ViewSettingsItem text="Within a month" key="S_FKKOP-BLDAT___BT___TODAY___MONTH"/>
+					<ViewSettingsItem text="Older than a month" key="S_FKKOP-BLDAT___LT___MONTH"/>-->
+				</items>
+			</ViewSettingsFilterItem>
+			<ViewSettingsFilterItem text="Scad.netto" key="FAEDN" multiSelect="false" items="{ path: 'DATAX>/NotificationCollection'}">
+				<items>
+					<ViewSettingsItem text="{DATAX>FAEDN}" key="FAEDN"/>
+				<!--<ViewSettingsItem text="Within a month" key="S_FKKOP-BLDAT___BT___TODAY___MONTH"/>
+					<ViewSettingsItem text="Older than a month" key="S_FKKOP-BLDAT___LT___MONTH"/>-->
+				</items>
+			</ViewSettingsFilterItem>
+			<ViewSettingsFilterItem text="Data doc." key="BLDAT" multiSelect="false"  items="{ path: 'DATAX>/NotificationCollection'}">
+				<items>
+					<ViewSettingsItem text="{DATAX>BLDAT}" key="BLDAT"/>
+					<!--<ViewSettingsItem text="Within a month" key="S_FKKOP-BLDAT___BT___TODAY___MONTH"/>
+					<ViewSettingsItem text="Older than a month" key="S_FKKOP-BLDAT___LT___MONTH"/>-->
+				</items>
+			</ViewSettingsFilterItem>
+		</filterItems>
+	</ViewSettingsDialog>
+</core:FragmentDefinition>
